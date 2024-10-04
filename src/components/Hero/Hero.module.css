@@ -1,0 +1,170 @@
+/* Ensure global settings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container */
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/frame.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+  }
+  
+  .image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 28rem;
+  }
+  
+  /* Navbar section */
+  .smallContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .logoImage {
+    margin-top: 12px;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16rem;
+    align-items: center;
+    margin-top: 12px;
+  }
+  
+  .first {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    text-align: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .first li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+  
+  /* Hero section */
+  .heroContainer {
+    display: flex;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .content {
+    width: 500px;
+  }
+  
+  .picture {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 16px;
+    background-color: white;
+    z-index: 4;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 5px whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  
+  .content h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+  .content p {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  
+  .proxy {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+  }
+  
+  .proxy button {
+    color: #75CCEB;
+    background-color: white;
+    border-radius: 16px;
+    width: 120px;
+    height: 48px;
+    border: none;
+    
+   
+  }
+
+  .proxy button:hover{
+    cursor:pointer;
+    color:white;
+    background-color: #75CCEB;
+  }
+  
+
+
+  @media (max-width:600px){
+    .right {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4rem;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    .picture {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 16px;
+      background-color: white;
+      z-index: 4;
+      border: 2px solid white;
+      box-shadow: 0px 0px 5px 5px whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom:5px;
+    }
+
+    .content {
+      width: 400px;
+    }
+  }
